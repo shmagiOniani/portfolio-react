@@ -1,0 +1,164 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/fonts.scss";
+
+header {
+  // display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  @include appear;
+  nav {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    .name {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      width: 20vw;
+      height: 100%;
+      h2 {
+        @include h2;
+        a {
+          @include hover;
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+    .social-icons {
+      height: 100%;
+      width: 80vw;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 3rem;
+      div {
+        width: 2rem;
+        height: auto;
+        margin: 0 2rem;
+        color: white;
+        img {
+          width: 100%;
+          height: auto;
+          padding: 1.1rem;
+          transition: all 1s ease;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .facebook {
+        img {
+          &:hover {
+            padding: 10px;
+            // border: 1px solid #d2d2d8;
+            padding: 1rem;
+            background-color: cornflowerblue;
+          }
+        }
+      }
+      .github {
+        width: 3.8rem !important;
+        img {
+          &:hover {
+            padding: 10px;
+            // border: 1px solid darkblue;
+            border-radius: 30px;
+            background-color: black;
+          }
+        }
+      }
+    }
+  }
+  .left-bar {
+    display: inline-grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 10vw;
+    height: 90vh;
+    .down-arrow {
+      opacity: 1;
+      transition: all 1s ease-in-out;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 2rem;
+      &:hover {
+        cursor: pointer;
+        .down {
+          background-color: $dominant-red;
+        }
+      }
+      .down {
+        @include topFade;
+        @include arrow;
+        //   left:50%;
+        transition: all 0.2s ease-in;
+        &:before {
+          @include arrowHead;
+          top: 3.5rem;
+          left: -1rem;
+          transform: rotate(45deg);
+        }
+        &:after {
+          @include arrowHead;
+          top: 3.5rem;
+          left: -0.2rem;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+    .up-arrow {
+      opacity: 1;
+      transition: all 1s ease-in-out;
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      // padding-left: 2rem;
+      &:hover {
+        cursor: pointer;
+        .up {
+          background-color: $dominant-red;
+        }
+      }
+      .up {
+        @include bottomFade;
+        @include arrow;
+        right: 50% !important;
+        transition: all 0.2s ease-in;
+        &:before {
+          @include arrowHead;
+          top: 0.4rem;
+          left: -1.1rem;
+          transform: rotate(-45deg);
+        }
+        &:after {
+          @include arrowHead;
+          top: 0.4rem;
+          left: -0.1rem;
+          transform: rotate(45deg);
+        }
+      }
+    }
+    ul {
+      font-family: "Catamaran-Light";
+      li {
+        list-style: none;
+        font-size: 25px;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}
