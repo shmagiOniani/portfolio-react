@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 @mixin hover {
     transition: all 0.2s ease-in-out;
         &:hover {
@@ -29,6 +31,9 @@
         @include h1;
         height: 4rem;
     }
+    h1:last-child {
+        margin-left: 80px;
+    }
     .underlines {
         position: relative;
         margin-top: 10%;
@@ -48,6 +53,13 @@
     }
     p {
         @include p;
+    
+    }
+    .highlight-text {
+        color: $dominant-red;
+        font-size: 25px;
+        letter-spacing: 2px;
+        font-family: system-ui;
     }
 }
 

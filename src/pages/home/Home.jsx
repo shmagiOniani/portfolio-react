@@ -8,8 +8,7 @@ function Home() {
         <h1 className="left-fade">SHMAGI</h1>
         <h1 className="left-fade">ONIANI</h1>
         <div className="underlines left-fade"></div>
-        <p className="left-fade">web-developer /</p>
-        <p className="left-fade">markup designer.</p>
+        <p className="left-fade">Full Stack <b className="highlight-text">Javascript</b> Developer</p>
       </div>
     </div>
   );
