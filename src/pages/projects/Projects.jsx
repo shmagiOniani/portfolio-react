@@ -1,10 +1,11 @@
 import React, { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import Carousel from './three/Carousel'
+import './projects.scss'
 
 function Projects() {
   return (
-    <div style={{position: "absolute"}}>
+    <div className='projects-wrapper'>
       <Canvas>
         <Suspense fallback={null}>
           <Carousel />
