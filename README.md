@@ -1,1 +1,9 @@
 # portfolio-react
+# https://rainbowit.net/themes/inbio/
+  "@react-three/drei": "9.65.3",
+    "@react-three/fiber": "8.12.1",
+    "gsap": "3.11.5",
+    "leva": "0.9.34",
+    "loader-utils": "3.2.1",
+    "react-use": "17.4.0",
+    "three": "0.151.3"
