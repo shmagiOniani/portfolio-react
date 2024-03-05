@@ -1,6 +1,7 @@
 import { Routes, Route} from "react-router-dom";
 
 import Header from "./components/header/Header";
+import Home from "./sections/home/Home";
 
 import "./app.scss";
 
@@ -13,8 +14,9 @@ function App() {
 
       <Routes>
         <Route>
-          {/* <Route path="/" element={<Home />} />
-          <Route path="projects" element={<Projects />} />
+
+         <Route path="/" element={<Home />} />
+           {/* <Route path="projects" element={<Projects />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} /> */}
         </Route>
