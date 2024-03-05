@@ -5,6 +5,7 @@ import "./gig.scss";
 function Gig() {
   return (
     <Space direction="vertical" size={16} className="gig-card">
+      
       <Card
         title="Default size card"
         // extra={<a href="#">More</a>}
