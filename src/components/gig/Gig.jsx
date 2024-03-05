@@ -7,7 +7,7 @@ function Gig() {
     <Space direction="vertical" size={16} className="gig-card">
       <Card
         title="Default size card"
-        extra={<a href="#">More</a>}
+        // extra={<a href="#">More</a>}
         style={{ width: 300 }}
       >
         <p>Card content</p>
