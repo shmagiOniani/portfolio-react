@@ -1,0 +1,15 @@
+
+.experience-item-wrapper {
+    padding: 11px 26px;
+    transition: all .3s;
+    &:hover {
+        transform: translateY(-10px);
+        .experience-icon-wrapper {
+            opacity: 1!important;
+        }
+    }
+    .experience-icon-wrapper {
+        opacity: 0;
+        transition: all .3s;
+    }
+}

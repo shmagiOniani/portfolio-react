@@ -1,0 +1,15 @@
+
+.portfolio-item-wrapper {
+    padding: 11px 26px;
+    transition: all .3s;
+    &:hover {
+        transform: translateY(-10px);
+        .portfolio-icon-wrapper {
+            opacity: 1!important;
+        }
+    }
+    .portfolio-icon-wrapper {
+        opacity: 0;
+        transition: all .3s;
+    }
+}

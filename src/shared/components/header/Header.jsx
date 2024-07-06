@@ -42,16 +42,16 @@ const SECTION_LIST = [
 
 function Header() {
   return (
-    <header>
+    <header className="section-header-wrapper">
       <nav>
         <Row>
-          <Col xs={2}>logo</Col>
-          <Col xs={8}>
+          <Col xs={1}>logo</Col>
+          <Col xs={10}>
             <div className="nav-body-wrapper">
               <ul>
-                {SECTION_LIST.map((mapItem) => {
+                {SECTION_LIST.map((mapItem, i) => {
                   return (
-                    <li>
+                    <li key={i+mapItem.title}>
                       <a href={mapItem.href}>{mapItem.title}</a>
                     </li>
                   );
@@ -59,7 +59,7 @@ function Header() {
               </ul>
             </div>
           </Col>
-          <Col xs={2}></Col>
+          <Col xs={1}></Col>
         </Row>
       </nav>
     </header>

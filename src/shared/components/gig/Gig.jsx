@@ -5,7 +5,9 @@ import "./gig.scss";
 function Gig({ children }) {
   return (
     <Space direction="vertical" className="gig-card">
-      <Card style={{ width: " 100%" }}>{children}</Card>
+      <Card style={{ width: " 100%",  }}>
+        {children}
+      </Card>
     </Space>
   );
 }

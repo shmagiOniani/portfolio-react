@@ -1,0 +1,49 @@
+@import "../../../styles//variables.scss";
+
+.ant-tabs {
+  .ant-tabs-nav {
+    &::before {
+      display: none;
+    }
+    .ant-tabs-nav-wrap {
+      box-shadow: $active-tab-box-shadow;
+      // padding: 35px;
+      .ant-tabs-nav-list {
+        width: 100%;
+        display: flex;
+        padding: 0;
+        .ant-tabs-tab {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: none;
+          font-size: 18px;
+          padding: 26px 10px;
+          &:hover {
+            box-shadow: $active-tab-box-shadow;
+          }
+          .ant-tabs-tab-btn {
+            color: $tab-color;
+
+            &:active {
+              color: $active-tab-color;
+            }
+          }
+        }
+        .ant-tabs-tab-active {
+          background-color: transparent;
+          box-shadow: $active-tab-box-shadow;
+          .ant-tabs-tab-btn {
+            color: $active-tab-color;
+          }
+        }
+      }
+    }
+  }
+  .ant-tabs-content-holder {
+    padding: 10px 35px;
+    .ant-tabs-content {
+    }
+  }
+}
