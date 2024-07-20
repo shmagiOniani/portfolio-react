@@ -1,26 +1,28 @@
 import React from 'react'
 import { CustomTab } from '../../../../shared/components'
+import {Education, Skills, Experience,
+  Interview} from './sections'
 
 const TABS_ARR = [
     {
       label: `Education `,
       key: 1,
-      children: `Education content`,
+      children: <Education/>,
     },
     {
       label: `Professional Skils `,
       key: 2,
-      children: `Professional Skils content`,
+      children: <Skills/>,
     },
     {
       label: `Experience `,
       key: 3,
-      children: `Experience content`,
+      children: <Experience/>,
     },
     {
       label: `Interview `,
       key: 4,
-      children: `Interview content`,
+      children: <Interview/>,
     }
   ]
 

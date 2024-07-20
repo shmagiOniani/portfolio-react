@@ -1,0 +1,51 @@
+@import "../../../../../../styles/variables.scss";
+
+.edu-wrapper {
+  .edu-col {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 10px;
+      width: 5px;
+      height: calc(100% - 20px);
+      border-radius: 100px;
+      background-color: #151414;
+      margin: 10px 0;
+    }
+    .edu-col-item {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -15px;
+        width: 27px;
+        height: 5px;
+        background-color: #151414;
+        z-index: 2;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: calc(50% - 7px);
+        left: -30px;
+        width: 20px;
+        height: 20px;
+        border: 5px solid #151414;
+        border-radius: 50%;
+        background-color: $bg-primary;
+        transition: all 1s;
+      }
+      &:hover {
+
+        &::after {
+        background-color: $paragraph-hover;
+
+        }
+      }
+    }
+  }
+}

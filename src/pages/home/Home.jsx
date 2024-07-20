@@ -1,14 +1,9 @@
 import React from "react";
-import { Col, Divider, Flex, Layout, Row } from "antd";
+import { Divider, Flex, Layout } from "antd";
 
-import {
-  BgEffect,
-  CustomTab,
-  Gig,
-  SectionTitle,
-} from "../../shared/components";
-import "./home.scss";
 import { MyResumeTab, MyServices, Portfolio } from "./sections";
+import { SectionTitle } from "../../shared/components";
+import "./home.scss";
 
 const layoutStyle = {
   borderRadius: 8,
@@ -19,15 +14,10 @@ const layoutStyle = {
   padding: "15px",
 };
 
-const colGigStyle = {
-  display: "flex",
-  justifyContent: "center",
-};
 function Home() {
   return (
     <Flex gap="middle" justify="center">
       <Layout style={layoutStyle}>
-
         <SectionTitle
           align={"center"}
           paragraph={"7+ YEARS OF EXPERIENCE"}

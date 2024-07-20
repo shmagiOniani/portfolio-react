@@ -1,0 +1,28 @@
+@import "../../../../../styles/variables.scss";
+
+.education-item-wrapper {
+  padding: 11px 26px;
+  &:hover {
+    .education-p-item {
+      color: #c4cfde;
+    }
+  }
+  .education-p-item {
+    color: #878e99;
+    transition: all 0.3s;
+  }
+  .education-subinfo-wrapper {
+    text-align: center;
+    color: $color-primary;
+    display: block;
+    font-size: 14px;
+    padding: 0 15px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 6px;
+    background: $background-color-1;
+    box-shadow: $shadow-1;
+    transition: $transition;
+    font-weight: 500;
+  }
+}

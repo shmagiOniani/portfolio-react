@@ -7,35 +7,37 @@
   cursor: pointer;
   position: relative;
   width: 100%;
-  &::after {
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  z-index: 1;
+  &::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: -1;
     border-radius: 20px;
     background: linear-gradient(to right bottom, #212428, #16181c);
+    transition: all 0.3s ease-in;
+    opacity: 0;
   }
   &:hover {
-    .ant-card {
-      background: $bg-primary;
+    &::before {
+      opacity: 1;
     }
   }
   .ant-card {
-    z-index: 1234;
     background: none;
     border: none;
-    transition: all 0.3s ease-in;
     overflow: hidden;
+    border-radius: 20px;
     .ant-card-head {
-      color: $paragraph!important;
+      color: $paragraph !important;
       border-bottom: 1px solid #9e9e9e;
     }
     .ant-card-body {
-      color: $paragraph!important;
-
+      color: $paragraph !important;
     }
   }
 }

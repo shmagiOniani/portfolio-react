@@ -1,7 +1,7 @@
 import React from "react";
 import { Space, Typography } from "antd";
 
-function SectionTitle({ paragraph, header, align }) {
+function SectionTitle({ headerSize, paragraph, header, align }) {
   return (
     <Space
       direction="vertical"
@@ -16,7 +16,7 @@ function SectionTitle({ paragraph, header, align }) {
           color: "#c4cfde",
           textTransform: "capitalize",
           margin: "0px",
-          fontSize: "60px",
+          fontSize: headerSize || "60px",
         }}
         level={1}
       >
