@@ -43,7 +43,6 @@ const onFinish = (values) => {
 
 function Contact() {
   const { formState, getFormSubmitHandler } = useFormData(
-    "https://public.herotofu.com/v1/35f2f580-479c-11ef-b917-afc6b84c2283"
   );
 
   return (
