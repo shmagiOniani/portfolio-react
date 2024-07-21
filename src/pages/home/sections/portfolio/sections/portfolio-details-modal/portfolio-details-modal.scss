@@ -1,0 +1,31 @@
+@import "../../../../../../styles/variables.scss";
+@import "../../../../../../styles/fonts.scss";
+
+.profile-slider-wrapper {
+  border-radius: 15px;
+  overflow: hidden;
+  font-family: "Poppins-Regular";
+}
+
+.portfolio-h1 {
+  font-family: "Montserrat-Bold";
+
+  color: #c4cfde!important;
+  margin: 20px 0;
+  font-size: 32px!important;
+}
+.portfolio-p p {
+  font-family: "Poppins-Regular";
+  font-size: 18px;
+}
+
+p {
+  letter-spacing: 1px;
+  font-family: "Poppins-Regular";
+  color: $color-body;
+  font-size: 16px;
+
+  strong {
+    color: $color-heading;
+  }
+}

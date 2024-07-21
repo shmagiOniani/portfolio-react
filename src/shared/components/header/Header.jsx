@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Row } from "antd";
 
 // import fb from "../../assets/images/facebook-bright.png"
@@ -41,17 +41,28 @@ const SECTION_LIST = [
 ];
 
 function Header() {
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    const onScroll = () => setOffset(window.scrollY);
+    // clean up code
+    window.removeEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
   return (
-    <header className="section-header-wrapper">
+    <header
+      className={`section-header-wrapper ${offset > 120 ? "fixed-header" : ""}`}
+    >
       <nav>
         <Row>
-          <Col xs={1}>logo</Col>
-          <Col xs={10}>
+          <Col xs={2}></Col>
+          <Col xs={20}>
             <div className="nav-body-wrapper">
               <ul>
                 {SECTION_LIST.map((mapItem, i) => {
                   return (
-                    <li key={i+mapItem.title}>
+                    <li key={i + mapItem.title}>
                       <a href={mapItem.href}>{mapItem.title}</a>
                     </li>
                   );
@@ -59,7 +70,11 @@ function Header() {
               </ul>
             </div>
           </Col>
-          <Col xs={1}></Col>
+          <Col xs={2}>
+            <a class="contact-btn" target="_blank" href="#contact">
+              <span>CONTACT </span>
+            </a>
+          </Col>
         </Row>
       </nav>
     </header>

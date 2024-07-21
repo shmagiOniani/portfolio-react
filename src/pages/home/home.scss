@@ -1,2 +1,14 @@
+.home-container {
+  overflow: hidden;
+  width: calc(80% - 8px);
+  max-width: calc(80% - 8px);
+  background: transparent;
+  padding: 15px;
+}
 
-
+@media (max-width: 1000px) {
+  .home-container {
+    width: calc(95% - 8px);
+    max-width: calc(95% - 8px);
+  }
+}

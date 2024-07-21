@@ -28,7 +28,9 @@ function MyServices() {
         return (
           <Col
             key={i + "ewwefewf"}
-            span={8}
+            xl={8}
+            md={12}
+            xs={24}
             style={{ display: "flex", justifyContent: "center" }}
           >
             <Gig>
