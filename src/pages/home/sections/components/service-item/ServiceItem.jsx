@@ -22,9 +22,9 @@ function ServiceItem({ contentData }) {
         {contentData.paragraph}
       </p>
       
-      <div className="service-icon-wrapper">
+      <a href={contentData.href} className="service-icon-wrapper">
         <IconWrapper icon={<ArrowRightOutlined />} size={'27px'}/>
-      </div>
+      </a>
 
       
     </Flex>

@@ -24,9 +24,9 @@ const socialLinks = [
   },
 ];
 
-function Headline() {
+function Headline({ id }) {
   return (
-    <Row className="headline-wrapper">
+    <Row id={id} className="headline-wrapper">
       <Col md={12} lg={15}>
         <Typography.Paragraph className="sub-header">
           WELCOME TO MY WORLD
@@ -34,9 +34,19 @@ function Headline() {
         <Typography.Title className="main-header" level={1}>
           Hi, I’m <span>Shmagi Oniani</span>
         </Typography.Title>
-        <Typography.Title className="main-header" level={1}>
+
+        {/* <span class="cd-headline clip is-full-width">
+          <span>a </span>
+          <span class="cd-words-wrapper" style="width: 279.812px;">
+            <b class="is-visible">Developer.</b>
+            <b class="is-hidden">Professional Coder.</b>
+            <b class="is-hidden">UI/UX Designer.</b>
+          </span>
+        </span> */}
+
+        {/*<Typography.Title className="main-header" level={1}>
           A JavaScript Developer
-        </Typography.Title>
+        </Typography.Title> */}
         <Typography.Paragraph className="about-myself">
           I use animation as a third dimension by which to simplify experiences
           and kuiding thro each and every interaction. I’m not adding motion

@@ -1,11 +1,12 @@
 import React from "react";
 import { Col, Row, Button, Form, Input, Typography } from "antd";
 import { useFormData } from "herotofu-react";
-import { random } from "../../../../assets/images";
-import "./contact.scss";
+import { PhoneOutlined } from "@ant-design/icons";
+// import { random } from "../../../../assets/images";
 import facebook from "../../../../assets/images/social-icons/facebook.svg";
 import twitter from "../../../../assets/images/social-icons/twitter.svg";
 import linkedin from "../../../../assets/images/social-icons/linkedin.svg";
+import "./contact.scss";
 
 const socialLinks = [
     {
@@ -41,25 +42,26 @@ const onFinish = (values) => {
   console.log(values);
 };
 
-function Contact() {
-  const { formState, getFormSubmitHandler } = useFormData(
-  );
+function Contact({id}) {
+  // const { formState, getFormSubmitHandler } = useFormData();
 
   return (
-    <Row gutter={[36, 36]} className="conatct-form-wrapper">
+    <Row id={id} gutter={[36, 36]} className="conatct-form-wrapper">
       <Col xs={0} md={9}>
         <div className="contact-intro">
           <div className="contact-intro-img">
-            <img src={random} alt="" />
+
+            {/* <img src={random} alt="" /> */}
+            <PhoneOutlined />
           </div>
           <Typography.Title className="contact-h4" level={4}>
-            Nice To Meet Yuo
+            Nice To Meet You
           </Typography.Title>
 
           <p>Chief Operating Officer</p>
           <p>I am available for freelance work. Connect with me via and call in to my account.</p>
-          <p>Phone: <strong>+012 345 678 90</strong></p>
-          <p>Email: <strong>admin@example.com</strong></p>
+          <p>Phone: <strong><a href="tel:+995579994859">+995 579 99 48 59</a></strong></p>
+          <p>Email:<strong><a href="mailto:onianishmagi@gmail.com">onianishmagi@gmail.com</a></strong></p>
           <Typography.Paragraph
           className="sub-header"
           style={{ marginTop: "70px" }}

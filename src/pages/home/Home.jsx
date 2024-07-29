@@ -10,14 +10,14 @@ function Home() {
     <Flex gap="middle" justify="center">
       <Layout className="home-container">
         {/* headline */}
-        <Headline />
+        <Headline id="home" />
         {/* services */}
         <Divider
           style={{ margin: "73px 0px 68px 0px", backgroundColor: "#121415" }}
         />
 
         <SectionTitle paragraph={"FEATURES"} header={"What I Do"} />
-        <MyServices />
+        <MyServices  id="feature"/>
         <Divider
           style={{ margin: "73px 0px 68px 0px", backgroundColor: "#121415" }}
         />
@@ -28,18 +28,18 @@ function Home() {
           paragraph={"VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK"}
           header={"My Portfolio"}
         />
-        <Portfolio />
+        <Portfolio id="portfolio" />
         <Divider
           style={{ margin: "73px 0px 68px 0px", backgroundColor: "#121415" }}
         />
         {/* resume tab */}
         <SectionTitle
           align={"center"}
-          paragraph={"7+ YEARS OF EXPERIENCE"}
+          paragraph={"4+ YEARS OF EXPERIENCE"}
           header={"My Resume"}
         />
 
-        <MyResumeTab />
+        <MyResumeTab id="resume" />
         <Divider
           style={{ margin: "73px 0px 68px 0px", backgroundColor: "#121415" }}
         />
@@ -49,7 +49,7 @@ function Home() {
           paragraph={"CONTACT"}
           header={"Contact With Me"}
         />
-        <Contact/>
+        <Contact id="contacts"/>
       </Layout>
     </Flex>
   );

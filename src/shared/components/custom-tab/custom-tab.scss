@@ -6,7 +6,7 @@
       display: none;
     }
     .ant-tabs-nav-wrap {
-      box-shadow: $active-tab-box-shadow;
+      box-shadow: $card-box-shadow;
       // padding: 35px;
       .ant-tabs-nav-list {
         width: 100%;
@@ -21,7 +21,7 @@
           font-size: 18px;
           padding: 26px 10px;
           &:hover {
-            box-shadow: $active-tab-box-shadow;
+            box-shadow: $card-box-shadow;
           }
           .ant-tabs-tab-btn {
             color: $tab-color;
@@ -33,7 +33,7 @@
         }
         .ant-tabs-tab-active {
           background-color: transparent;
-          box-shadow: $active-tab-box-shadow;
+          box-shadow: $card-box-shadow;
           .ant-tabs-tab-btn {
             color: $active-tab-color;
           }

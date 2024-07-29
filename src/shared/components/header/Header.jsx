@@ -22,18 +22,18 @@ const SECTION_LIST = [
     title: "resume",
     href: "#resume",
   },
-  {
-    title: "Testimonial",
-    href: "#testimonial",
-  },
-  {
-    title: "Clients",
-    href: "#clients",
-  },
-  {
-    title: "Pricing",
-    href: "#pricing",
-  },
+  // {
+  //   title: "Testimonial",
+  //   href: "#testimonial",
+  // },
+  // {
+  //   title: "Clients",
+  //   href: "#clients",
+  // },
+  // {
+  //   title: "Pricing",
+  //   href: "#pricing",
+  // },
   {
     title: "Contacts",
     href: "#contacts",
@@ -71,7 +71,7 @@ function Header() {
             </div>
           </Col>
           <Col xs={2}>
-            <a class="contact-btn" target="_blank" href="#contact">
+            <a className="contact-btn" target="_blank" href="#contact">
               <span>CONTACT </span>
             </a>
           </Col>

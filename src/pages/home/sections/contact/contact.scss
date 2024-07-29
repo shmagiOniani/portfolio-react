@@ -15,10 +15,15 @@
         // display: flex;
         // justify-content: center;
         position: relative;
+        background-color: $color-primary;
+        font-size: 125px;
+        color: white;
+        display: flex;
+        justify-content: center;
         &:hover {
-            img{ 
-                transform:translateY(-25%) scale(1.1);
-            }
+            // img{ 
+            //     transform:translateY(-25%) scale(1.1);
+            // }
         }
       img {
         position: absolute;
@@ -27,6 +32,13 @@
         transition: all .3s;
         width: 100%;
         height: auto;
+      }
+    }
+    p {
+      a{ 
+        color: white;
+        text-decoration: underline;
+        margin-left: 10px;
       }
     }
     .contact-h4{ 
@@ -105,7 +117,7 @@
     padding: 30px;
     border-radius: 10px;
     margin-left: 20px;
-    height: 100%;
+    height: fit-content;
     .ant-form-item {
       min-height: 100px;
       .ant-form-item-row {

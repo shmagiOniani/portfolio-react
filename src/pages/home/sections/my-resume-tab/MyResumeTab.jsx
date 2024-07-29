@@ -26,9 +26,9 @@ const TABS_ARR = [
     }
   ]
 
-function MyResumeTab() {
+function MyResumeTab({id}) {
   return (
-    <div>
+    <div id={id}>
         <CustomTab items={TABS_ARR} />
         
     </div>
