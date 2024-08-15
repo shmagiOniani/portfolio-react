@@ -68,9 +68,9 @@ function Contact({id}) {
         >
           FIND WITH ME
         </Typography.Paragraph>
-        {socialLinks.map((i) => {
+        {socialLinks.map((i,b) => {
           return (
-            <div className="social-link">
+            <div key={b} className="social-link">
               <a href={i.link}>
                 <img width={20} height={20} src={i.icon} alt="" />
               </a>

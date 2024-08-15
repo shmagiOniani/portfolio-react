@@ -1,13 +1,24 @@
 import { Routes, Route } from "react-router-dom";
-
+import { ReactLenis, useLenis } from 'lenis/react'
 import Home from "./pages/home/Home";
 
 import "./app.scss";
 import { Header } from "./shared/components";
-// import { Affix } from "antd";
+import { useEffect } from "react";
+
 
 function App() {
+ 
+  const lenis = useLenis(({ scroll }) => {
+   
+  })
+
+  useEffect(() => {
+
+  }, [])
+  
   return (
+      <ReactLenis root>
     <div className="App">
         <Header />
       <div className="routes-wrapper">
@@ -21,6 +32,7 @@ function App() {
         </Routes>
       </div>
     </div>
+        </ReactLenis>
   );
 }
 
