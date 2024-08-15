@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Col, Modal, Row } from "antd";
 import { Gig } from "../../../../shared/components";
-import { PortfolioItem, ServiceItem } from "../components";
+import { PortfolioItem } from "../components";
 import "./portfolio.scss";
 import { PortfolioDetailsModal } from "./sections";
 import { PORTFOLIO_ITEMS } from "../../../../assets/static-data/portfolio";
@@ -12,10 +12,9 @@ const item = {
   href: "",
 };
 
-
-
-function Portfolio({id}) {
+function Portfolio({ id }) {
   const [open, setOpen] = useState(false);
+
   return (
     <>
       <Row id={id} gutter={[32, 32]}>
@@ -47,7 +46,7 @@ function Portfolio({id}) {
         onCancel={() => setOpen(false)}
         width={"100%"}
         // height={"100%"}
-        style={{paddingBottom: "30px"}}
+        style={{ paddingBottom: "30px" }}
         footer=""
       >
         <PortfolioDetailsModal data={PORTFOLIO_ITEMS} />
