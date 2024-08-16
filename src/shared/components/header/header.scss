@@ -17,11 +17,11 @@
           font-size: 13px;
           &:hover {
             a {
-              color: $paragraph-hover;
+              color: $color-primary;
             }
           }
           a {
-            color: $paragraph;
+            color: $color-heading;
             padding: 0.5rem 1rem;
           }
         }
@@ -30,7 +30,7 @@
     .contact-btn {
       width: max-content;
       border-radius: 6px;
-      background: linear-gradient(145deg, #1e2024, #23272b);
+      background: $background-color-1;
       box-shadow: $shadow-1;
       transition: $transition;
       position: relative;
@@ -59,7 +59,7 @@
         border-radius: 6px;
         top: 0;
         left: 0;
-        background: linear-gradient(to right bottom, #212428, #16181c);
+        background: $bg-after;
         opacity: 0;
         z-index: -1;
       }

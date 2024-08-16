@@ -14,7 +14,7 @@
     margin-bottom: 20px;
   }
   .main-header {
-    color: #ffffff;
+    color: $color-white;
     font-weight: 700;
     font-size: 60px;
     line-height: 62px;
@@ -77,7 +77,7 @@
         border-radius: 6px;
         top: 0;
         left: 0;
-        background: linear-gradient(to right bottom, #212428, #16181c);
+        background: $bg-after;
         opacity: 0;
         z-index: -1;
       }

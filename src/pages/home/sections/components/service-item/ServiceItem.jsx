@@ -9,8 +9,9 @@ function ServiceItem({ contentData }) {
     <Flex gap="middle" justify="center" vertical="true" className="service-item-wrapper">
       <IconWrapper icon={contentData.icon} size={'37px'}/>
       <Typography.Title
+      className="paragraph"
         style={{
-          color: "#c4cfde",
+         
           textTransform: "capitalize",
           margin: "0px",
         }}
@@ -18,7 +19,7 @@ function ServiceItem({ contentData }) {
       >
         {contentData.title}
       </Typography.Title>
-      <p  style={{ color: "#c4cfde", font: '16px Poppins, sans-serif',    lineHeight: '28px' }}>
+      <p className="paragraph" style={{  font: '16px Poppins, sans-serif',    lineHeight: '28px' }}>
         {contentData.paragraph}
       </p>
       

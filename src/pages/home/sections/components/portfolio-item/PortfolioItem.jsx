@@ -29,8 +29,9 @@ function PortfolioItem({ contentData, onClick }) {
       </p>
       <div className="portfolio-title-container">
         <Typography.Title
+        className="paragraph"
           style={{
-            color: "#c4cfde",
+            
             textTransform: "capitalize",
             margin: "0px",
           }}

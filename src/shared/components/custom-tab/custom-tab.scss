@@ -6,7 +6,7 @@
       display: none;
     }
     .ant-tabs-nav-wrap {
-      box-shadow: $card-box-shadow;
+      box-shadow: $shadow-1;
       // padding: 35px;
       .ant-tabs-nav-list {
         width: 100%;
@@ -21,21 +21,21 @@
           font-size: 18px;
           padding: 26px 10px;
           &:hover {
-            box-shadow: $card-box-shadow;
+            box-shadow: $shadow-1;
           }
           .ant-tabs-tab-btn {
-            color: $tab-color;
+            color: $color-heading;
 
             &:active {
-              color: $active-tab-color;
+              color: $color-primary;
             }
           }
         }
         .ant-tabs-tab-active {
           background-color: transparent;
-          box-shadow: $card-box-shadow;
+          box-shadow: $shadow-1;
           .ant-tabs-tab-btn {
-            color: $active-tab-color;
+            color: $color-primary;
           }
         }
       }

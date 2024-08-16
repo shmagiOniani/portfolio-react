@@ -11,7 +11,7 @@
       width: 5px;
       height: calc(100% - 20px);
       border-radius: 100px;
-      background-color: #151414;
+      background-color: $color_4;
       margin: 10px 0;
     }
     .edu-col-item {
@@ -24,7 +24,7 @@
         left: -15px;
         width: 27px;
         height: 5px;
-        background-color: #151414;
+        background-color: $color_4;
         z-index: 2;
       }
       &::after {
@@ -34,15 +34,15 @@
         left: -30px;
         width: 20px;
         height: 20px;
-        border: 5px solid #151414;
+        border: 5px solid $color_4;
         border-radius: 50%;
-        background-color: $bg-primary;
+        background-color: $background-color-2;
         transition: all 1s;
       }
       &:hover {
 
         &::after {
-        background-color: $paragraph-hover;
+        background-color: $color-primary;
 
         }
       }

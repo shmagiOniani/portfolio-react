@@ -22,8 +22,9 @@ function ExperienceItem({contentData}) {
         {contentData.paragraph}
       </p>
       <Typography.Title
+      className="paragraph"
         style={{
-          color: "#c4cfde",
+          
           textTransform: "capitalize",
           margin: "0px",
         }}

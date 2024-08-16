@@ -4,11 +4,11 @@
   padding: 11px 26px;
   &:hover {
     .education-p-item {
-      color: #c4cfde;
+      color: $color-heading;
     }
   }
   .education-p-item {
-    color: #878e99;
+    color: $color-body;
     transition: all 0.3s;
   }
   .education-subinfo-wrapper {

@@ -10,7 +10,7 @@
     justify-content: space-between;
     span {
       // margin-bottom: 15px;
-      color: #c3cedd;
+      color: $color_1;
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 2px;
@@ -26,7 +26,7 @@
       font-size: 14px;
       border-radius: 10px;
       padding: 3px;
-      background: #212428;
+      background: $background-color-2;
       box-shadow: inset 8px 8px 16px rgba(0, 0, 0, 0.4588235294),
       inset -8px -8px 16px rgba(56, 62, 69, 0.4588235294);
     }

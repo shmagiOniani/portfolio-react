@@ -13,8 +13,8 @@ function EducationItem({ contentData }) {
       <Row>
         <Col span={20}>
           <Typography.Title
+          className="paragraph"
             style={{
-              color: "#c4cfde",
               textTransform: "capitalize",
               margin: "0px",
             }}

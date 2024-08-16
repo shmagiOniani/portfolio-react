@@ -18,9 +18,8 @@ function SectionTitle({ headerSize, paragraph, header, align }) {
         {paragraph}
       </Typography.Paragraph>
       <Typography.Title
-      className="section-h1"
+      className="section-h1 paragraph"
         style={{
-          color: "#c4cfde",
           textTransform: "capitalize",
           margin: "0px",
           fontSize: headerSize || "60px",
